@@ -24,10 +24,16 @@
             /* overflow: auto; */
             /* height: 100vh;  */
             margin: 1rem;
+            grid-auto-flow: row;
+            
         }
 
         body{
             overflow-x: hidden;
+            background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         }
 
         .grid-item{
@@ -48,8 +54,16 @@
             border: 1px solid black;
         }
         .item1{
-            /* grid-row-start: 2;
-            grid-row-end: span 2; */
+            grid-row-start: 2;
+            grid-row-end: span 2;
+        }
+        .item5{
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+        .item1{
+            grid-row-start: 2;
+            grid-row-end: span 2;
         }
     </style>
 </head>
@@ -59,7 +73,7 @@
         <div class="grid-item "><img src="img/download (2).jpeg" alt=""></div>
         <div class="grid-item"><img src="img/download (3).jpeg" alt="image"></div>
         <div class="grid-item"><img src="img/download (4).jpeg" alt="image"></div>
-        <div class="grid-item"><img src="img/download (5).jpeg" alt="image"></div>
+        <div class="grid-item item5"><img src="img/download (5).jpeg" alt="image"></div>
         <div class="grid-item"><img src="img/download (6).jpeg" alt="image"></div>
         <div class="grid-item"><img src="img/download (7).jpeg" alt="image"></div>
         <div class="grid-item"><img src="img/download (8).jpeg" alt="image"></div>
