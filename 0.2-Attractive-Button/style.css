@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #0b0d10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{  
+    color: #ffffff;
+}
+
+button{
+    padding: 2em 4em;
+    background-color: #161a20;
+    border: none;
+    border-radius: 1000px;
+    color: #f0f0f0;;
+    position: relative;
+
+    /* The below property is used to overlap button from button::after */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+button::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+}
+
+button:hover{
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff93, -40px 0 100px #e100ff9a;
+}

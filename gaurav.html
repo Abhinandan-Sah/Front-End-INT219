@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Priest</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #locationInput {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #searchBtn {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #results {
+            margin-top: 20px;
+        }
+
+        .priest-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            position: relative;
+        }
+
+        .btn2{
+            position: absolute;
+            z-index: 999;
+            padding: 5rem;
+        }
+
+        .close {
+            float: right;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens */
+            .modal-content {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Find a Priest for Worship</h1>
+    </header>
+
+    <main>
+        <label for="locationInput">Enter Your Location:</label>
+        <input type="text" id="locationInput" placeholder="Enter your location">
+
+        <button id="searchBtn" onclick="searchPriests()">Search</button>
+
+        <div id="results"></div>
+    </main>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Contact Priest</h2>
+            <p id="selectedPriest"></p>
+            <label for="messageInput">Your Message:</label>
+            <textarea id="messageInput" rows="4" placeholder="Type your message"></textarea>
+            <button onclick="sendContact()" class="btn2" >Send Message</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Find a Priest</p>
+    </footer>
+
+    <script>
+        function searchPriests() {
+            // ... (previous JavaScript code) ...
+        }
+
+        function openModal(priestName, priestContact) {
+            const modal = document.getElementById('contactModal');
+            const selectedPriest = document.getElementById('selectedPriest');
+            const messageInput = document.getElementById('messageInput');
+
+            selectedPriest.textContent = `Contact ${priestName} at ${priestContact}`;
+            messageInput.value = '';  // Clear previous input
+
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('contactModal');
+            modal.style.display = 'none';
+        }
+
+        function sendContact() {
+            // In a real scenario, you would implement logic to send the message.
+            // For simplicity, let's just close the modal in this example.
+            closeModal();
+        }
+    </script>
+
+</body>
+</html>
