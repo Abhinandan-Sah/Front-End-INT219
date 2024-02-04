@@ -84,12 +84,23 @@ nav li:first-child{
         display: block;
     }
     body{
+        background-image: url(img/image-600x844.jpg);
         background-size: contain;
     }
-}
+    
+} 
 
 @media(max-width: 400px){
     .sidebar{
         width: 100%;
     }
 }
+
+/* This is copy from internet */
+/* @media only screen and (max-width: 749px) {
+    .collection_grid-item {
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 100%;
+    }
+} */
