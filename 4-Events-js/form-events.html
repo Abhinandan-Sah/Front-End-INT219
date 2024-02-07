@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    <div>
+        <img src="img4.jpg" width="300px" height="300px" alt="">
+        <form onsubmit="return(onSubmit())">
+            <input type="text" id="text" onfocus="onFocus()" onblur="onBlur()">
+            <input type="submit" >
+        </form>
+    </div>
+    
+
+    <script>
+        function onFocus(){
+            document.getElementById("text").style.backgroundColor = "purple";
+        }
+        function onBlur(){
+            document.getElementById("text").style.backgroundColor = "blue";
+        }
+        function onSubmit(){
+            if(document.getElementById("text").value==""){
+                alert("Form is Empty");
+            }
+            else{
+                alert("Form is Submitted");
+            }
+        }
+    </script>
+</body>
+</html>

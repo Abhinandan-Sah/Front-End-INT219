@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img id="img" src="img4.jpg" width="300" height="300" onmouseover="counting()">
+
+    <button onclick="start()">start</button>
+    <button onclick="stop()">stop</button>
+    <p id="demo"></p>
+
+    <script>
+        var i;
+        function start(){
+           i= setInterval(dateTime, 1000);
+        }
+        function imgL(){
+           i= setInterval(dateTime, 3000);
+        }
+        function dateTime(){
+            document.getElementById("demo").innerHTML = new Date();
+            document.getElementById("demo").style.cssText = "font-size: 70px; color:purple; ";
+            document.getElementById("img").style.width="500px";
+        }
+        function stop(){
+            clearInterval(i);
+        }
+    </script>
+    
+</body>
+</html>

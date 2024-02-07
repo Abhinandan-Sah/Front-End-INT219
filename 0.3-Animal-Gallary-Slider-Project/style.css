@@ -296,7 +296,7 @@ header a{
 
 @keyframes contentOut{
     to{
-        transform: translateY(150px);
+        transform: translateY(-150px);
         filter: blur(20px);
         opacity: 0;
     }
