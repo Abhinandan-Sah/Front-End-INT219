@@ -83,7 +83,34 @@ nav li:nth-child(2){
     text-align: center;
 } */
 
+/* Marquee section */
+.marquee-section{
+    
+}
 
+.marquee-section marquee{
+    background-color: green;
+}
+
+.marquee-section marquee ul{
+    /* list-style: none; */
+    display: flex;
+    
+}
+
+
+.marquee-section marquee ul li{
+    /* height: 50px; */
+    color: white;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.marquee-section marquee ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
 
 
 
