@@ -85,7 +85,7 @@ nav li:first-child{
     }
     body{
         background-image: url(img/image-600x844.jpg);
-        background-size: contain;
+        background-size: cover;
     }
     
 } 
