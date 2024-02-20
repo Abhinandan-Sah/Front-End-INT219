@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Emissary Challange</title>
+</head>
+<body>
+    <h1>Week3-Activity</h1>
+    <h2>Form Emissary Challange</h2>
+    <input type="text" id="demo">
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="msg"></p>
+
+    <script>
+        function myFunction(){
+        const message= document.getElementById("msg");
+        message.innerHTML="";
+        let x = document.getElementById("demo").value;
+        let digitCount = 0;
+        try{
+            if (x=="" ) throw "is empty";
+            if(isNaN(x)) throw "is not a number";
+            x=Number(x);
+            
+        // for (let i = 0; i < x.length; i++) {
+        //    let j= Number(x[i]);
+        //     if (isNaN(j) && x[i] == ' ') {
+        //         digitCount++;
+        //     }
+        // }
+            
+            if (digitCount>18) throw " is more than 18";
+            if (digitCount<18) throw " is less than 18";
+        }
+        catch(err){
+            message.innerHTML = "Input " + err;
+        }
+        finally{
+            message.innerHTML = "Input "+  error;
+        }
+
+        // console.log(digitCount);
+        }
+    </script>
+</body>
+</html>
