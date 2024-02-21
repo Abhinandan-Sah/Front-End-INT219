@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // let employee = {
+        //     name: "Rahul",
+        //     id: "1",
+        //     salary: 10000000000
+        // }
+
+
+        // console.log(employee);
+        // console.log(employee.name);
+        // console.log(employee["id"]);
+
+
+        // let student = {}
+
+        // student.name = "neha"
+        // student.roll = 18
+
+        // console.log(student);
+        // console.log(student.name);
+        // console.log(roll no of ${student.name} is ${student.roll});
+
+
+
+        // object constructor
+
+        // let student = new Object()
+
+        // student.name = "neha"
+        // student.roll = 18
+
+        // console.log(student);
+        // console.log(student.name);
+        // console.log(roll no of ${student.name} is ${student.roll});
+
+        // object create
+
+        // let stu_prototype={}
+        // let student = Object.create(stu_prototype)
+
+        // student.name = "neha"
+        // student.roll = 18
+
+        // console.log(student);
+        // console.log(student.name);
+        // console.log(roll no of ${student.name} is ${student.roll});
+
+
+        // function constructor
+
+        function stu(name, roll, marks)
+        {
+            this.name = name;
+            this.roll = roll;
+            this.marks = marks;
+        }
+
+        let student = new stu("neha", 19, 50)
+        console.log(student);
+        console.log(student.name);
+
+
+    </script>
+    
+</body>
+</html>
