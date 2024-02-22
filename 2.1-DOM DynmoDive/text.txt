@@ -1,0 +1,5 @@
+use basic Dom methods like getelementbyId, QuerySelector, appendChild, 
+1) change the  text content of a paragraph dynamically 
+2) Toggle the visibility of an image with a button click
+3) Change the background color of the webpage 
+4) Create a new element and append it to the document

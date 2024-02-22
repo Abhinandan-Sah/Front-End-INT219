@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Dynamodive</title>
+</head>
+<body>
+    <p id="para">Welcome to Lovely Professional University</p>
+    <img src="img3.jpg" height="500px" width="500px" alt="" id="img1">
+    <button onclick="disappear()">Click to change</button>
+
+    <script>
+        let img= document.getElementById('img1');
+        // p.innerText="Welcome to LPU";k
+        document.body.appendChild(img);
+        function disappear(){
+            console.log(img.style.display);
+            if(img.style.display == "block"){
+                img.style.display= "none";
+            }
+            else{
+                img.style.display= "block";
+            }
+            
+        }
+
+        let p = document.getElementById("para");
+        p.innerText = "Welcome to LPU";
+        document.body.appendChild(p);
+
+        document.body.style.background="aqua";
+
+        // let h1= document.createTextNode("I have create this h1 using DOM");
+        // document.body.appendChild(h1);
+        let h1= document.createElement('h1');
+        h1.innerText="I have create this h1 using DOM";
+        document.body.appendChild(h1);
+        
+    </script>
+</body>
+</html>
