@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style></style>
-  </head>
-  <body>
-    <h3>Generate a random color</h3>
-    <button id="btn">Generate Color</button>
 
-    <script>
-      let btn = document.getElementById("btn");
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    #pp {
+      color: #000;
 
-      btn.addEventListener("click", function () {
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
 
-        let randomColor = getRandomColor();
-        document.body.style.background = randomColor;
+    #btnn {
+      display: flex;
+      width: 60px;
+      height: 30px;
+      padding: 5px 13px ;
+      flex-direction: column; 
+      justify-content: center;
+       align-items: center;
+       gap: 10px; 
+
+      border-radius: 30px;
+      border: 1px solid #FFD24B;
+      background: #F0B80D;
+      box-shadow: 0px 4px 24px 0px #F0B80D;
+    }
+  </style>
+</head>
+
+<body>
+  <p style="background-color: #8DABF1; height: 500px; width: 100vw;">
+  <div id="btnn">
+    <p id="pp">Submit</p>
+  </div>
+  </p>
+  <h3>Generate a random color</h3>
+  <button id="btn">Generate Color</button>
+
+  <script>
+    let btn = document.getElementById("btn");
+
+    btn.addEventListener("click", function () {
+
+      let randomColor = getRandomColor();
+      document.body.style.background = randomColor;
 
 
-      });
+    });
 
-      function getRandomColor() {
-        let red = Math.floor(Math.random() * 255);
-        let green = Math.floor(Math.random() * 255);
-        let blue = Math.floor(Math.random() * 255);
+    function getRandomColor() {
+      let red = Math.floor(Math.random() * 255);
+      let green = Math.floor(Math.random() * 255);
+      let blue = Math.floor(Math.random() * 255);
 
-        let color = `rgb(${red}, ${green}, ${blue})`;
-        return color;
-      }
-    </script>
-  </body>
+      let color = `rgb(${red}, ${green}, ${blue})`;
+      return color;
+    }
+  </script>
+</body>
+
 </html>
