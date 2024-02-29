@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ele{
+            border: 10px solid black;
+        }
+        #top{
+            padding:20px;
+            width: 80%;
+        }
+        #main{
+            padding:20px;
+        }
+        #down{
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top" class="ele">
+        <div id="main" class="ele">
+            <div id="down" class="ele">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let d1= document.getElementById("top");
+        let d2= document.getElementById("main");
+        let d3=document.getElementById("down");
+
+        d1.addEventListener("click", function(){
+            this.style.borderColor= "red";
+        });
+        d2.addEventListener("click", function(){
+            this.style.borderColor= "green";
+        });
+        d3.addEventListener("click", function(){
+            this.style.borderColor= "blue";
+        });
+        
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="" alt="" id="">
+    <div id="divId" onclick="changeImageOnClick()"" onmouseover="fi()" onmouseout="f2()">
+        <img id="2" class="imgStyle" src="/img3.jpg" alt="" >
+        <img id="3" class="imgStyle" src="/img3.jpg" alt="" >
+        <img id="4" class="imgStyle" src="/img3.jpg" alt="" >
+        <img id="5" class="imgStyle" src="/img3.jpg" alt="" >
+    </div>
+
+    <script type="text/javascript">
+        function changeImageOnClick(){
+            var x= event.target;
+            if(x==)
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flexbox Gallery</title>
+   <style>
+      .gallery {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px; 
+      }
+
+      .gallery img {
+         width: 200px; 
+         height: 200px; 
+         object-fit: cover; 
+         cursor: pointer;
+      }
+
+      #bigImage {
+         width: 400px;
+         height: 400px;
+         margin-top: 20px;
+         border: 2px solid green;
+      }
+   </style>
+</head>
+<body>
+
+   
+
+   <!-- Big image block -->
+   <div id="bigImage">
+      <img src="" id="displayedImage" style="width: 100%; height: 100%;" alt="Big Image">
+   </div>
+
+   <!-- Flex container for gallery -->
+   <div class="gallery">
+    <!-- Flex items (images) -->
+    <img src="img3.jpg" onclick="displayImage('img1.jpg')" alt="Image 1">
+    <img src="img2.jpg" onclick="displayImage('img2.jpg')" alt="Image 2">
+    <img src="img3.jpg" onclick="displayImage('img3.jpg')" alt="Image 3">
+
+ </div>
+
+   <script>
+      // Function to display full-size image
+      function displayImage(fullSizeSrc) {
+         var bigImage = document.getElementById('displayedImage');
+         bigImage.src = fullSizeSrc;
+      }
+
+      
+   </script>
+
+</body>
+</html>
