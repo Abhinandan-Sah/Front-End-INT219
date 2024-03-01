@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
 
 *{
     margin: 0px;
     padding: 0px;
 }
+
 
 body{
     min-height: 100vh;
@@ -18,7 +15,8 @@ body{
     background-position: center;
     object-fit: contain; */
     background: #EBF0FF;
-    
+
+
     
 }
 
@@ -119,3 +117,70 @@ nav ul li .box{
     background: #F0B80D;
     box-shadow: 0px 4px 24px 0px #F0B80D;
   }
+
+
+  /* main-HeroSection */
+main{
+    /* width: 80%; */
+    width: 1240px;
+    margin-top: 50px ;
+    margin-left: 10rem;
+    /* border: 1px solid black; */
+    
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heroSection{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.leftMain{
+    width: 47.5%;
+
+display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 56px;
+}
+
+.leftMain .mainHeading{
+    color: #000;
+
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+}
+
+.leftMain .mainHeading .strokeFirst .box1 {
+    position: relative;
+}
+
+.leftMain .mainHeading .box{
+    /* width: 100%;
+  height: 100%; */
+  position: absolute;
+  margin: 3px -7.5rem;
+}
+
+.rightMain{
+    width: 47.5%;
+}
+
+.rightMain img{
+    width: 100%;
+    height: 500px;
+flex-shrink: 0;
+object-fit: contain;
+    /* background: url(img/Investment.png), lightgray 50% / con no-repeat; */
+}
+
