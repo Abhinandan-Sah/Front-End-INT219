@@ -40,6 +40,7 @@ nav ul{
 
 nav li{
     height: 50px;
+    
 }
 
 nav a{
@@ -56,12 +57,22 @@ font-weight: 400;
 line-height: normal;
 }
 
-nav a:hover{
-    background-color: #f0f0f0;
+.navBtn:hover{
+    background-color: #d9e3ff;
+border-bottom: 2px solid #648bff;
+transition: 600ms;
 }
 
 nav li:first-child{
     margin-right: auto;
+}
+nav #navBtn:hover{
+    background-color: none;
+}
+nav li #btnn:hover{
+    transform: scale(1.1);
+    transition: 800ms;
+    
 }
 
 
@@ -144,17 +155,17 @@ main{
 .leftMain{
     width: 47.5%;
 
-display: inline-flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 56px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 56px;
 }
 
 .leftMain .mainHeading{
     color: #000;
 
 font-family: Inter;
-font-size: 48px;
+font-size: 44px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -171,6 +182,73 @@ line-height: normal;
   position: absolute;
   margin: 3px -7.5rem;
 }
+.leftMain .contributors{
+    display: grid;
+    row-gap: 20px;
+    gap: 10px;
+}
+.contributorName{
+    display: inline-flex;
+padding: 24px;
+align-items: flex-start;
+gap: 10px;
+
+border-radius: 10px;
+background: #F6FBF8;
+box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* .leftMain .contributors .contributorName .iconDiv{
+
+} */
+.leftMain .contributors .contributorName .iconDiv img{
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+}
+
+.contributorName .commentDescription{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 13px;
+flex: 1 0 0;
+}
+
+.commentDescription .username{
+    color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.commentDescription .description{
+    align-self: stretch;
+    color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.contributors .contributorBox{
+
+display: flex;
+width: 590px;
+height: 62px;
+padding: 24px 24px 21px 24px;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 10px;
+background: linear-gradient(180deg, #F6FBF8 0%, rgba(234, 234, 234, 0.00) 50%);
+box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.05);
+}
+
+
 
 .rightMain{
     width: 47.5%;
@@ -181,6 +259,24 @@ line-height: normal;
     height: 500px;
 flex-shrink: 0;
 object-fit: contain;
-    /* background: url(img/Investment.png), lightgray 50% / con no-repeat; */
 }
 
+/* MiddleSection */
+.middleSection{
+    display: flex;
+width: 80%;
+height: 122.98px;
+margin: 0px auto ;
+padding: 10px;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 10px;
+box-shadow: 0px 24px 34px 0px #CEDDF2;
+/* border: 1px solid black; */
+}
+
+.middleSection .contributorName .middleSectionIcon img{
+    width: 64px;
+    height: 64px;
+}
