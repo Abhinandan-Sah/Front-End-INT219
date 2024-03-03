@@ -294,6 +294,49 @@ z-index: 2;
 .middleSection .contributorName .middleSectionIcon img{
     width: 64px;
     height: 64px;
+}
 
 
+    /* Fancy Section */
+.fancyContainer{
+    display: flex;
+width: 60%;
+height: 2535px;
+flex-direction: column;
+align-items: center;
+gap: 102px;
+flex-shrink: 0;
+margin: 3rem 20%;
+}
+
+.trustSection{
+    width: 469.015px;
+    height: 127.728px;
+    flex-shrink: 0;
+}
+
+.trustLogo{
+    
+}
+
+.trustTitle{
+    width: 10rem;
+height: 42.524px;
+flex-shrink: 0;
+
+color: #000;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.trustVector{
+    width: 177.419px;
+height: 20.281px;
+transform: rotate(7.403deg);
+flex-shrink: 0;
+stroke-width: 4px;
+stroke: #F0880D; 
 }
