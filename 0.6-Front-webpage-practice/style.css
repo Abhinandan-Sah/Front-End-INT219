@@ -16,7 +16,10 @@ body{
     object-fit: contain; */
     background: #EBF0FF;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
