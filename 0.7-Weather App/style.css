@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    width: 30rem;
+    border: 1px solid black;
+    padding: 10px 10px;
+    gap: 1rem;
+}
+
+form #inputBox{
+    height: 1.5rem;
+    /* width: 4rem; */
+}
+
+form button{
+    height: 1.7rem;
+}
+
+.cityWeatherData{
+    padding: 10px 0;
+    
+}
+
+.countryDetails{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.details{
+    display: flex;
+    
+}
+
+.card{
+    margin-left: 15px;
+}
+
+.card p {
+    text-align: center;
+}
+.card img{
+    margin-top: -8px ;
+}
+#weatherType{
+    margin-top: -14px;
+}
+
+@media(max-width: 640px) {
+    .container{
+        width: 15rem;
+    }
+}

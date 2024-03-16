@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to JQuery</title>
+    <!-- <script src="jquery-3.7.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="d1">
+        <div id="p1">Welcome</div>
+        ul
+    </div>
+    <script>
+    //   $(document).ready(function () {
+    //     alert("JQuery is implemented");
+    //   });
+      $(document).ready(function(){
+        $("#p1").css("font-size", "200px");
+        $("#p1").css("color", "red");
+        $("body").css("backgrouncolor", "red");
+        // $("")
+        var a= $("#p1").html;
+        // alert(a);
+        $("ul li:even").css("color", "red");
+        $("ul li:odd").css("border", "2px solid");
+      })
+    </script>
+  </body>
+</html>
