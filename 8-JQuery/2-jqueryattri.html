@@ -22,16 +22,7 @@
             width: 300px;
             background-color: rgb(255, 51, 0);
         }
-        .newImg{
-            height: 300px;
-            width: 300px;
-            display: none;
-        }
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        
     </style>
 </head>
 <body>
@@ -49,7 +40,6 @@
     <button id="b1">click me</button>
     <br>
     <div class="f1"></div>
-    <div class="newImg"><img src="img1.jpg" alt=""></div>
     <button id="addImg">Add Image</button>
 
 
@@ -61,12 +51,12 @@ $(document).ready(function(){
             })
 
             $("#addImg").click(function(){
-                $(".f1").addClass("newImg");
-                $(".newImg").css("display","block")
+                // adding elements in the div f1
+                $(".f1").html("<img src=img1.jpg height=300px width=300px alt=img>"); 
             })
-        })
+})
 
-    </script>
+</script>
 
 
 

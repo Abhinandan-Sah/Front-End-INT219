@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    <h2>Parsing a JSON Array.</h2>
+    <p>Data written as an JSON array will be parsed into a JavaScript array.</p>
+    <p id="demo"></p>
+
+    <script>
+      const text = '[ "Ford", "BMW", "Audi", "Fiat" ]';
+      console.log(text);
+      const myArr = JSON.parse(text);
+      console.log(myArr);
+      document.getElementById("demo").innerHTML = myArr[0];
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>parse</title>
+  </head>
+  <body>
+    <!-- parse convert String file or data into JSON -->
+    <script>
+      const text =
+        '{"name" : "Avi", "cgpa" : "8.35", "courses" : ["HTML", "CSS", "JS"]}';
+      console.log("This is JSON data: " + text);
+      const JSON = JSON.parse(myJSON);
+    //   console.log(
+    //     "After using JSON.parse(), it converts the JSON data into a JavaScript object: " +
+    //       JSON.stringify(text, null, 2)
+    //   );
+
+      // let myJSON = '{
+      // "name" : "Avi",
+      // "cgpa" : "8.35",
+      // "courses" : ["HTML", "CSS", "JS"],
+      // }';
+
+      // console.log("This is JSON data"+myJSON);
+      // let text = JSON.parse(myJSON);
+      console.log("After using Parse it convert the JSON data into string data" + text);
+    </script>
+  </body>
+</html>

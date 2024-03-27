@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Link Attribute Alert</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    .para{
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 100px;
+        font-weight: 200;
+        color:black;
+    }
+
+    .lol {
+        font-size: 120%;
+        color: yellow;
+    }
+    .highlighted {
+        background-color: yellow;
+    }
+</style>
+
+<body>
+
+<a href="https://lpu.in" id="myLink">Click Me to redirect!</a>
+<br>
+<br>
+<button id="alertButton">Alert Link</button>
+
+<p id="p1"> SUI </p>
+<button id="b1">SUI</button>
+
+<p class="lol">CR7</p>
+<p class="lol">LM10</p>
+<button>Remove</button>
+
+<pre id = "pre">hi there my name is suii!!</pre>
+<button id = "but">click me to know my real name</button>
+
+
+<pre id = "haha">I AM RONALDO</pre>
+<button>make ronaldo invisible</button>
+
+<div id="myDiv">Hover over me!</div>
+
+<script>
+    //attr 
+$(document).ready(function(){
+    $('#alertButton').click(function(){
+        var linkHref = $('#myLink').attr('href');
+        alert(linkHref);
+    });
+});
+
+//addclass
+$(document).ready(function(){
+$("#b1").click(function(){
+    $("#p1").addClass("para");
+})
+});
+
+//removeclass
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").removeClass("lol");
+  });
+});
+
+//append
+$(document).ready(function(){
+    $("button").click(function(){
+    $("#pre").append(" still my name is suii!!");
+    });
+});
+
+//delete
+$(document).ready(function(){
+    $("button").click(function(){
+    $("#haha").empty();
+    });
+});
+
+//toggle
+$(document).ready(function(){
+  $("div").on("mouseover mouseout", function(){
+    $(this).toggleClass("highlighted");
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+  #thumbnailContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  #fullImageContainer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  #fullImage {
+    max-width: 100%;
+    max-height: 400px;
+    display: none;
+  }
+  body{
+    background-color: green;
+
+  }
+  button{
+   background-color: red;
+   border-radius: 5px;
+   height: 40px;
+   width: 200px;
+   content: counter(Sumant);
+  }
+</style>
+</head>
+<body>
+
+<div id="thumbnailContainer">
+  <img class="thumbnail" src="img1.jpg" alt="Thumbnail 1">
+  <img class="thumbnail" src="img1.jpg" alt="Thumbnail 2">
+  <img class="thumbnail" src="img1.jpg" alt="Thumbnail 3">
+</div>
+
+<div id="fullImageContainer">
+  <img id="fullImage" src="lpuImg.jpg" alt="Full-size Image">
+</div>
+
+<button id="btn">Show/Hide Full Image</button>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const fullImage = document.getElementById('fullImage');
+  const button = document.getElementById('btn');
+
+  button.addEventListener('click', function() {
+  
+    if (fullImage.style.display === 'none') {
+      fullImage.style.display = 'block';
+    } else {
+      fullImage.style.display = 'none';
+    }
+  });
+
+  thumbnails.forEach(function(thumbnail) {
+    thumbnail.addEventListener('click', function() {
+
+      fullImage.src = thumbnail.src.replace('thumbnail', 'full');
+      
+      fullImage.style.display = 'block';
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  });
+});
+</script>
+
+</body>
+</html>
+
+ Activity-5
