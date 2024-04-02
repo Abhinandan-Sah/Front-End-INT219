@@ -1,0 +1,65 @@
+/* Body styling */
+body {
+    background-color: #f0f0f0; /* Light body background */
+    font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the form container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styling */
+.heading {
+    color: #471869; /* Purple color for the heading */
+    margin-bottom: 20px;
+}
+
+/* Description styling */
+.description {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input field styling */
+label {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Button styling */
+.submit-button {
+    background-color: #471869; /* Purple color for the button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #5d1a86; /* Darker purple color on hover */
+}

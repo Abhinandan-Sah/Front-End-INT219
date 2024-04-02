@@ -1,0 +1,22 @@
+/* Center the container horizontally */
+.container {
+    text-align: center; /* Aligns content in the center */
+    margin-top: 50px; /* Add space above the button */
+}
+
+/* Style for the GitHub login button */
+.github-button {
+    background-color: #24292e; /* GitHub's primary color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove default button border */
+    border-radius: 24px; /* Make the button rounded */
+    padding: 12px 24px; /* Add padding inside the button */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Change button background color on hover */
+.github-button:hover {
+    background-color: #1f6feb; /* Darker shade of GitHub's primary color */
+}
