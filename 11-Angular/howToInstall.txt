@@ -1,0 +1,3 @@
+0- To change from c to d drive -> d: if we are inside c drive
+1- To create- ng new ProjectName
+2- To show local host -> ng serve
