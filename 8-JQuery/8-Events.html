@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+   
+
+    <p id="para">This is a p tag</p>
+
+    <button id="btn">this is a p tag</button>
+    <br><br>
+    <div id="colored-div" style="background-color: brown; height: 100px; width: 100px;"></div>
+
+    <script>
+        // $("#colored-div").mouseenter(function(){
+        //     $("#para").hide();
+        // })
+        // $("#colored-div").hover(function(){
+        //     $("#para").hide();
+        // },
+        // function(){
+        //     $("#para").show();
+        // }
+        // )
+
+        $(document).ready(function(){
+            $("#colored-div").on({
+            click: function(){
+                $(this).css("background-color", "green")
+            }, 
+            mouseenter: function(){
+                $(this).css("background-color", "purple");
+            }, 
+            mouseleave: function(){
+                $(this).css("background-color", "blue")
+            }
+        });
+        })
+        
+    </script>
+
+
+
+
+</body>
+</html>
